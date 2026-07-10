@@ -3,10 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Foundation</title>
+    <title>ART Studio</title>
+    <!-- Connecting your CSS file -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Portfolio Coming Soon</h1>
-    <p>We build intelligent systems and elegant interfaces for growing businesses.</p>
+
+    <!-- 1. NAVIGATION BAR -->
+    <header>
+        <nav>
+            <div class="logo">ART Studio</div>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Our Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 2. HERO SECTION -->
+        <section id="hero">
+            <div class="hero-content">
+                <h1>We Build Intelligent Systems & Elegant Interfaces for Growing Businesses</h1>
+                <p>Hi, I'm Hearty Isabel Delacion. We transition manual, scattered operations into high-performance, real-time digital solutions.</p>
+                <a href="#contact" class="btn-primary">Let's Build Your System</a>
+            </div>
+        </section>
+
+        <!-- 3. SERVICES SECTION -->
+        <section id="services">
+            <h2>What We Do for Your Business</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Full-Stack Web Development</h3>
+                    <p>Custom, responsive websites built from scratch to turn your visitors into paying customers.</p>
+                </div>
+                <div class="service-card">
+                    <h3>System Automation</h3>
+                    <p>Digitizing spreadsheets, manual records, and workflows into secure internal repositories.</p>
+                </div>
+                <div class="service-card">
+                    <h3>UI/UX Design</h3>
+                    <p>High-fidelity, elegant user journeys designed visually in Figma before code execution.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. FEATURED PROJECTS SECTION -->
+        <section id="projects">
+            <h2>Featured Case Studies</h2>
+            <div class="projects-container">
+                
+                <!-- Project 1: ATLAS -->
+                <article class="project-card">
+                    <h3>ATLAS</h3>
+                    <h4>An LLM-Driven Instructional Management Platform</h4>
+                    <p>Designed for faculty teachers and institutions to automate syllabus-to-exam generation alongside prescriptive assessment analytics.</p>
+                    <span class="tech-tag">Next.js</span> <span class="tech-tag">LLM Integration</span> <span class="tech-tag">Figma</span>
+                </article>
+
+                <!-- Project 2: KoopTimizer -->
+                <article class="project-card">
+                    <h3>KoopTimizer</h3>
+                    <h4>Centralized Data Repository</h4>
+                    <p>Engineered for the Lipa City Cooperatives Office to transition scattered manual records into an analytics-driven platform with OCR and automated notifications.</p>
+                    <span class="tech-tag">PHP</span> <span class="tech-tag">MySQL</span> <span class="tech-tag">OCR API</span>
+                </article>
+
+                <!-- Project 3: EZDocs -->
+                <article class="project-card">
+                    <h3>EZDocs</h3>
+                    <h4>Digital Document Request Platform</h4>
+                    <p>An automated platform streamlining official document requests for local barangays, featuring high-accessibility mobile and desktop experiences.</p>
+                    <span class="tech-tag">JavaScript</span> <span class="tech-tag">UI/UX</span> <span class="tech-tag">Process Automation</span>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- 5. ABOUT & EXPERTISE SECTION -->
+        <section id="about">
+            <h2>The Expertise Behind the Work</h2>
+            <p>Bringing structured, analytical project development and leadership experience to deliver reliable business systems.</p>
+            <div class="skills-box">
+                <h3>Our Core Stack</h3>
+                <p>HTML, CSS, JavaScript, PHP, Java, Python, PostgreSQL, MySQL, and Figma.</p>
+            </div>
+        </section>
+
+        <!-- 6. CONTACT FORM SECTION -->
+        <section id="contact">
+            <h2>Let's Scale Your Business</h2>
+            <p>Ready to build your digital system? Reach out and let's discuss your project.</p>
+            
+            <!-- Standard form template ready for free routing -->
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email Address" required>
+                <input type="text" name="business" placeholder="Your Business Name (Optional)">
+                <textarea name="message" placeholder="Tell us briefly about the system or website your business needs..." required></textarea>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- 7. FOOTER -->
+    <footer>
+        <p>&copy; 2026 Delacion Studios. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
